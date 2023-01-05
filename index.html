@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Logo" class="logo" />
+      </div>
+    </header>
+
+    <main>
+      <div class="labels">
+        <div class="label active"><span>Физическое здоровье</span></div>
+        <div class="label"><span>Социальное здоровье</span></div>
+        <div class="label"><span>Духовное и психическое здоровье</span></div>
+      </div>
+
+      <div class="sections">
+        <div class="section active">
+          <div class="question">
+            <p>
+              1. Есть ли у вас регулярный режим питания или вы едите когда
+              придется и что придется?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-1" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-1" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-1" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              2. Умеете ли вы составлять пищевой рацион, учитывая свои реальные
+              возможности и пользу для здоровья?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-2" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-2" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-2" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              3. Умеете ли вы определять и сохранять высокое качество пищевых
+              продуктов при покупке, приготовлении и хранении?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-3" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-3" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-3" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              4. Присутствуют ли в Вашей жизни ежедневные занятия спортом,
+              двигательными играми , физической работой?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-4" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-4" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-4" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>5. Проводите ли вы вы 20-30 минут на улице ежедневно?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-5" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-5" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-5" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-5" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>6. В каком состоянии Ваши волосы, ногти, кожа на лице?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>очень плохо </span>
+                <input type="radio" name="1-6" />
+              </div>
+              <div class="input">
+                <span>хотелось бы лучше </span>
+                <input type="radio" name="1-6" />
+              </div>
+              <div class="input">
+                <span>неплохо </span>
+                <input type="radio" name="1-6" />
+              </div>
+              <div class="input">
+                <span>все отлично </span>
+                <input type="radio" name="1-6" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>7. Довольны ли Вы своей фигурой и внешним видом?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет категорически</span>
+                <input type="radio" name="1-7" />
+              </div>
+              <div class="input">
+                <span>плохо</span>
+                <input type="radio" name="1-7" />
+              </div>
+              <div class="input">
+                <span>более менее</span>
+                <input type="radio" name="1-7" />
+              </div>
+              <div class="input">
+                <span>все отлично</span>
+                <input type="radio" name="1-7" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              8. Спите ли Вы ежедневно 7-8 часов без того, чтобы не проснуться
+              посреди ночи?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>очень плохо</span>
+                <input type="radio" name="1-8" />
+              </div>
+              <div class="input">
+                <span>хотелось бы лучше</span>
+                <input type="radio" name="1-8" />
+              </div>
+              <div class="input">
+                <span>неплохо</span>
+                <input type="radio" name="1-8" />
+              </div>
+              <div class="input">
+                <span>все отлично</span>
+                <input type="radio" name="1-8" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              9. Чередуете ли вы умственную и физическую активность в своей
+              жизни?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-9" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-9" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-9" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-9" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>10. Умеете ли вы находить время для полноценного отдыха?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="1-10" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="1-10" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="1-10" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="1-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="question">
+            <p>
+              1. Умеете ли вы четко выражать свои мысли без волнения и
+              обвинений?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-1" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-1" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-1" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>2. Умеете ли вы слушать других людей ?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-2" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-2" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-2" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>3. Есть ли у Вас неадекватная реакция на критику?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-3" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-3" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-3" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>4. Можете ли вы попросить об услуге или помощи?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-4" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-4" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-4" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              5. Умеете ли Вы понимать чувства, нужды и проблемы других людей?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-5" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-5" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-5" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-5" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              6. Умеете ли вы различать конфликты взглядов и конфликты
+              интересов?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-6" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-6" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-6" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-6" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              7. Развиты ли в Вас привычки уверенного, адекватного поведения?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-7" />
+              </div>
+              <div class="input">
+                <span>плохо</span>
+                <input type="radio" name="2-7" />
+              </div>
+              <div class="input">
+                <span>более менее</span>
+                <input type="radio" name="2-7" />
+              </div>
+              <div class="input">
+                <span>все отлично</span>
+                <input type="radio" name="2-7" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              8. Умеете ли Вы отстаивать свою позицию и отказываться от
+              нежелательных предложений?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-8" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-8" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-8" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-8" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>9. Умеете ли Вы признавать вклад других в общую работу?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-9" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-9" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-9" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-9" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              10. Умеете ли Вы адекватно оценивать свои способноси и свой взнос
+              в общую деятельность?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="2-10" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="2-10" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="2-10" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="2-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="question">
+            <p>
+              1. Умеете ли реально оценивать свои способности и возможности, а
+              также адекватно воспринимать оценки других людей?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-1" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-1" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-1" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              2. Умеете ли Вы определять суть возникающих проблем и пути их
+              решения?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-2" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-2" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-2" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              3. Умеете ли Вы предусматривать следствия вариантов решения
+              проблем для себя и других людей?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-3" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-3" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-3" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>4. Способны ли Вы выбирать оптимальные решения проблем?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-4" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-4" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-4" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              5. Умеете ли Вы определять жизненные цели, руководствуясь своими
+              нуждами, склонностями и способностями?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-5" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-5" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-5" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-5" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              6. Умеете ли Вы определять приоритеты и рационально использовать
+              время?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-6" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-6" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-6" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-6" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>7.Умеете ли вы контролировть проявление гнева?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-7" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-7" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-7" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-7" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>8. Умеете ли Вы переживать неудачи?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-8" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-8" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-8" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-8" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>9. Можете ли Вы контролировать тревогу?</p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-9" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-9" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-9" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-9" />
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>
+              10.Чувствуете ли Вы веру в то, что Вы являетесь хозяином своей
+              жизни и у Вас есть цель?
+            </p>
+            <div class="input-group">
+              <div class="input">
+                <span>нет</span>
+                <input type="radio" name="3-10" />
+              </div>
+              <div class="input">
+                <span>иногда</span>
+                <input type="radio" name="3-10" />
+              </div>
+              <div class="input">
+                <span>часто</span>
+                <input type="radio" name="3-10" />
+              </div>
+              <div class="input">
+                <span>всегда</span>
+                <input type="radio" name="3-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btns-group d-flex justify-content-center">
+        <button class="btn btn-primary" id="prevButton" disabled>
+          Предыдущая
+        </button>
+        <button class="btn btn-primary" id="nextButton">Следующая</button>
+        <button class="btn btn-primary" id="resultsButton" disabled>Завершить</button>
+      </div>
+    </main>
+
+    <script src="scripts/prevNext.js"></script>
+    <script src="scripts/inputs.js"></script>
+  </body>
+</html>

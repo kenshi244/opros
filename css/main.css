@@ -1,0 +1,133 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1f1f1 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+header {
+  padding: 15px 0;
+}
+header .logo-container {
+  width: 250px;
+}
+header .logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 40px 0;
+  max-width: 100%;
+}
+main .labels {
+  display: flex;
+  justify-content: center;
+}
+main .labels .label {
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 0.25rem;
+  background-color: #DCDCDC;
+  color: #000;
+  font-weight: 500;
+}
+main .labels .label.active {
+  background-color: #DBC29E;
+}
+@media screen and (max-width: 768px) {
+  main .labels {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .sections {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  max-width: 100%;
+}
+main .sections .section {
+  display: none;
+  padding: 40px;
+  width: 80%;
+  justify-content: center;
+  color: #000;
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  main .sections .section {
+    width: 100%;
+  }
+}
+main .sections .section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .sections .section .question {
+  margin: 20px 0;
+}
+main .sections .section .question p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+  background: #C89D5F;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+main .sections .section .question .input-group {
+  display: flex;
+  justify-content: center;
+}
+main .sections .section .question .input-group .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+@media screen and (max-width: 768px) {
+  main .sections .section .question .input-group .input {
+    margin: 0 20px;
+  }
+}
+main .sections .section .question .input-group .input span {
+  font-size: 15px;
+  cursor: default;
+}
+main .sections .section .question .input-group .input input {
+  cursor: pointer;
+}
+main .sections .section .question:first-child {
+  margin-top: 0;
+}
+main .btns-group {
+  padding: 30px 0;
+}
+main .btns-group button.btn-primary {
+  width: 200px !important;
+  margin: 0 15px;
+  border-radius: 50px;
+  flex: 0 0 auto !important;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  main .btns-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .btns-group button {
+    margin: 5px 0 !important;
+  }
+}/*# sourceMappingURL=main.css.map */

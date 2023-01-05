@@ -1,0 +1,126 @@
+$bg_brown: #EDDFC9
+$light_brown: #DBC29E
+$disabled_brown: #DCDCDC
+$dark_brown: #C89D5F
+$brown: #DCB57F
+
+$xxl: 1400px
+$xl: 1200px
+$lg: 992px
+$md: 768px
+$sm: 576px
+
+html,body
+    scroll-behavior: smooth
+
+body
+    background-color: #f1f1f1 !important
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-family: "Montserrat"
+
+header
+    padding: 15px 0
+    .logo-container
+        width: 250px
+        img
+            width: 100%
+            height: auto
+
+main
+    padding: 40px 0
+    max-width: 100%
+
+    .labels
+        display: flex
+        justify-content: center
+
+        .label
+            border-radius: 25px
+            padding: 5px 15px
+            margin: 0.25rem
+            background-color: $disabled_brown
+            color: #000
+            font-weight: 500
+
+            &.active
+                background-color: $light_brown
+
+        @media screen and ( max-width: $md )
+            flex-direction: column
+            align-items: center
+
+    .sections
+        display: flex
+        justify-content: center
+        padding: 15px 0
+        max-width: 100%
+
+        .section
+            display: none
+            padding: 40px
+            width: 80%
+            justify-content: center
+            color: #000
+            font-size: 40px
+            @media screen and ( max-width: $md )
+                width: 100%
+
+            &.active
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+
+            .question
+                margin: 20px 0
+                p
+                    font-size: 16px
+                    text-align: center
+                    font-weight: 400
+                    color: #000
+                    background: $dark_brown
+                    padding: 5px 20px
+                    border-radius: 25px
+
+                .input-group
+                    display: flex
+                    justify-content: center
+                    .input
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        margin: 0 50px
+                        @media screen and ( max-width: $md )
+                            margin: 0 20px
+
+                        span
+                            font-size: 15px
+                            cursor: default
+
+                        input
+                            cursor: pointer
+
+                &:first-child
+                    margin-top: 0
+
+    .btns-group
+        padding: 30px 0
+
+        button.btn-primary
+            width: 200px !important
+            margin: 0 15px
+            border-radius: 50px
+            flex: 0 0 auto !important
+            font-weight: 500
+
+        @media screen and ( max-width: $md )
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            button
+                margin: 5px 0 !important
