@@ -143,6 +143,9 @@ main
             justify-content: center
             align-items: center
             overflow: hidden
+            @media screen and ( max-width: 550px )
+                width: 90vw
+                height: 90vw
             .circle-section
                 width: 100%
                 height: 33.33%
@@ -168,3 +171,21 @@ main
                         background-color: #FFB563
                     &.third
                         background-color: #BBC2E2
+
+        .result-container
+            display: flex
+            flex-direction: column
+            align-items: start
+            margin: 50px 0 0 0
+            padding: 0 25px
+
+            h3
+                font-size: 25px
+                font-weight: bold
+
+            hr
+                width: 99%
+                height: 1px
+                background: grey
+                display: block
+                margin: 40px 0 !important
