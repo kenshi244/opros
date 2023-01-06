@@ -130,4 +130,52 @@ main .btns-group button.btn-primary {
   main .btns-group button {
     margin: 5px 0 !important;
   }
+}
+main .results {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .results .circle-container {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #000;
+  background: rgba(219, 187, 93, 0.3294117647);
+  border-radius: 50%;
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .results .circle-container .circle-section {
+  width: 100%;
+  height: 33.33%;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .results .circle-container .circle-section span {
+  z-index: 100;
+}
+main .results .circle-container .circle-section:first-child {
+  border-top: none;
+}
+main .results .circle-container .circle-section__inner {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+main .results .circle-container .circle-section__inner.first {
+  background-color: #D9F9A5;
+}
+main .results .circle-container .circle-section__inner.second {
+  background-color: #FFB563;
+}
+main .results .circle-container .circle-section__inner.third {
+  background-color: #BBC2E2;
 }/*# sourceMappingURL=main.css.map */
